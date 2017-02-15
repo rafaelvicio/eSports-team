@@ -14,7 +14,7 @@
 
 ### Capitulos
 
-* Capitulo 1:
-* Capitulo 2:
-* Capitulo 3:
-* Capitulo 4:
+* Capítulo 1: Introdução
+* Capítulo 2: Teoria
+* Capítulo 3: Definição do Problema
+* Capítulo 4: Solução
