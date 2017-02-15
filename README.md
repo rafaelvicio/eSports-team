@@ -14,3 +14,7 @@ Para a implementaçção da solução sera desenvolvimento um ambiente web utili
 * [Express](http://expressjs.com/) - Framework de desenvolvimento Web para Node.js
 * [AngularJS](http://angularjs.org/) - Framework MVC para JavaScript
 * [Node.js](http://nodejs.org/) - Ambiente de execução JavaScript
+
+###Cronograma
+
+O cronograma esta definido da seguinte maneira: [Cronograma](https://github.com/rafaelvicio/TCC-CC/blob/master/cronograma.md)
