@@ -12,7 +12,7 @@
 * 14/06 - Orientação (Correções)
 * 28/06 - Entrega Final  (Correções)
 
-### Capitulos
+### Capítulos
 
 * Capítulo 1: Introdução
 * Capítulo 2: Teoria
