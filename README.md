@@ -11,7 +11,7 @@ Desenvolver uma plataforma web que tem como objetivo principal contribuir com o 
 Para a implementaçção da solução sera desenvolvimento um ambiente web utilizado a Stack conhecida como MEAN. Um conjunto de tecnologias que se utilizam de uma unica linguagem de programação, o JavaScript. A MEAN Stack e formada pelas seguintes tecnologias:
 
 * [MongoDB](http://www.mongodb.org/) - Banco orientado a documentos
-* [Express](http://expressjs.com/) - Framework de desenvolvimento Web para Node.js
+* [Express](http://expressjs.com/) - Framework para rotas e view do Node.js
 * [AngularJS](http://angularjs.org/) - Framework MVC para JavaScript
 * [Node.js](http://nodejs.org/) - Ambiente de execução JavaScript
 
