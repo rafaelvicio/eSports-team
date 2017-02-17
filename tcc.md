@@ -4,23 +4,23 @@
 
 ### Capítulo 2: Teoria
 
-  #### Aplicação Web
+#### Aplicação Web
 
-    ##### HTTP
+##### HTTP
 
-    ##### HTML 5
+##### HTML 5
 
-    ##### JavaScript
+##### JavaScript
 
-  #### MEAN Stack
+#### MEAN Stack
 
-    ##### MongoDB
+##### MongoDB
 
-    ##### Express
+##### Express
 
-    ##### AngularJS
+##### AngularJS
 
-    ##### NodeJS
+##### NodeJS
 
 ### Capítulo 3: Definição do Problema
 
