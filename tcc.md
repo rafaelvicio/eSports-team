@@ -16,6 +16,10 @@
 
 #### MEAN Stack
 
+O acrônimo MEAN foi cunhado em 2013 por Valeri Karpov do time do MongoDB.[1] A MEAN Stack e formada pelas seguintes tecnologias: MongoDB, Express, AngularJS e Node.js.
+
+MEAN aposta na onipresença da linguagem JavaScript, o que significa que a comunidade pode contribuir com novas stacks baseadas em JavaScript na plataforma Node.js que tornem ainda mais produtivo e divertido o desenvolvimento de aplicações web[2]
+
 * ##### MongoDB
 
 * ##### Express
@@ -31,3 +35,9 @@
 ### Capítulo 4: Solução
 
   Em desenvolvimento...
+  
+### Bibliografia
+
+[1] Valeri Karpov. The mean stack: Mongodb, expressjs, angularjs and node.js. 2013.
+
+[2] Oddy Osmani. Full-stack javascript with mean and yeoman. 2013.
