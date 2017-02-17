@@ -6,11 +6,13 @@
 
 #### Aplicação Web
 
-* ##### HTTP
+* ##### Aplicação Web
 
-* ##### HTML 5
+* ##### Programação Orientada a Eventos
 
 * ##### JavaScript
+
+* ##### NoSQL
 
 #### MEAN Stack
 
