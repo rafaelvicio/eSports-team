@@ -28,6 +28,7 @@ Lista de livros que vou utilizar para o desenvolvimento de todo o projeto.
 * JavaScript de Alto Desempenho - Novatec
 * O melhor do JavaScript - Novatec
 * Segredos do Ninja JavaScript - Novatec
+* JavaScript: The Good Parts - Novatec
 
 ##### Outros
 
