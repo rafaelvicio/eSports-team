@@ -20,7 +20,7 @@ O acrônimo MEAN foi cunhado em 2013 por Valeri Karpov do time do MongoDB.[1] A 
 
 MEAN aposta na onipresença da linguagem JavaScript, o que significa que a comunidade pode contribuir com novas stacks baseadas em JavaScript na plataforma Node.js que tornem ainda mais produtivo e divertido o desenvolvimento de aplicações web[2]
 
-Felipe Leuche concluiu em seu estudo com escabalidade de aplicações web com uso da MEAN Stack que esse conjunto de tecnologias traz de fato diversos beneficios, por esse motivo e uma otima opção para o desenvolvimento de aplicações web escalaveis.[3]
+Felipe Leuche realiou um estudo em seu trabalho com escalabilidade de uma aplicação web que foi desenvolvida utilizando a MEAN Stack, ao termino do seu trabalho concluiu-se que o uso das tecnologias da MEAN Stack travez de fato diversos beneficios quanto a produtividade e a escalabilidade da aplicação, mas ressaltou que subistituir alguma dessas tecnologias pode aumentar e muito a dificuldade do desenvolvimento da qualquer aplicaçao. [3]
 
 * ##### MongoDB
 
