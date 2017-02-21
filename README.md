@@ -2,6 +2,10 @@
 
 Trabalho de Conclusão de Curso - [Universidade Paulista](http://www.unip.br/default.asp)
 
+###Justificativa
+
+Atualmente as organizações de esporte eletrônico não dispõem de qualquer ferramenta especializadas para o gerenciamento do seu negócio, muitas utilizam-se de ferramentas genéricas como planilhas e documentos para fazer o seu planejamento. Um software especializado em um negócio específico pode garantir benefícios, como também contribuir para o aumento de produtividade
+
 ###Objetivos Gerais
 
 Desenvolver uma plataforma web que tem como objetivo principal contribuir com o desenvolvimento das equipes de esporte eltrônico atravez de uma aplicação web que vai fornecer funcionalidades como gerenciamento da equipe, cronograma de treinos, calendario de eventos e demais funcionalidades basicas.
