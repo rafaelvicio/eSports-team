@@ -40,8 +40,8 @@ Felipe Leuche realiou um estudo em seu trabalho com escalabilidade de uma aplica
   
 ### Bibliografia
 
-[1] Valeri Karpov. The mean stack: Mongodb, expressjs, angularjs and node.js. 2013.
+[1] Valeri Karpov. The mean stack: Mongodb, expressjs, angularjs and node.js. 2013. https://www.edx.org/course/introduction-mongodb-using-mean-stack-mongodbx-m101x-0
 
-[2] Oddy Osmani. Full-stack javascript with mean and yeoman. 2013.
+[2] Oddy Osmani. Full-stack javascript with mean and yeoman. 2013. https://addyosmani.com/blog/full-stack-javascript-with-mean-and-yeoman/
 
 [3] Felipe Leuche. Aplicações Escaláveis com MEAN STACK. 2014. http://www.inf.ufpr.br/bmuller/TG/TG-FilipeMichael.pdf
