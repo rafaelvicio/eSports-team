@@ -1,6 +1,6 @@
 ### Referencias Bibliograficas
 
-Lista de livros que vou utilizar para o desenvolvimento de todo o projeto.
+Lista de livros que serão utilizados para o desenvolvimento de todo o projeto.
 
 ##### MongoDB
 
