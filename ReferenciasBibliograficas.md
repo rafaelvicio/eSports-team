@@ -4,15 +4,15 @@ Lista de livros que vou utilizar para o desenvolvimento de todo o projeto.
 
 ##### MongoDB
 
-* MongoDB - Casa do Código
-* NoSQL - Casa do Código
+* MongoDB - Casa do Código [OK]
+* NoSQL - Casa do Código [OK]
 * Introdução ao MongoDB - Novatec [OK]
 
 ##### NodeJS
 
-* Aplicações web real-time com Node.js - Casa do Código
-* Canivete suíço do desenvolvedor Node - Casa do Código
-* Construindo APIs REST com Node.js - Casa do Código
+* Aplicações web real-time com Node.js - Casa do Código [OK]
+* Canivete suíço do desenvolvedor Node - Casa do Código [OK]
+* Construindo APIs REST com Node.js - Casa do Código [OK]
 * Aprendendo Node - Novatec [OK]
 
 ##### Angular
@@ -28,10 +28,9 @@ Lista de livros que vou utilizar para o desenvolvimento de todo o projeto.
 * JavaScript de Alto Desempenho - Novatec
 * O melhor do JavaScript - Novatec
 * Segredos do Ninja JavaScript - Novatec
-* JavaScript: The Good Parts - Novatec
 
 ##### Outros
 
-* Mean - Casa do Código
+* Mean - Casa do Código [OK]
 * MEAN Definitivo - Novatec
 * Guia Front-End - Casa do Código
