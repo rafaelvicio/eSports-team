@@ -1,0 +1,56 @@
+User{
+  firstName: {},
+  lastName: {},
+  nickName: {},
+  email: {},
+  birthday: {},
+  bibliography: {},
+  times: [
+    name: {},
+    tag: {},
+    description: {}
+  ],
+  creationDate: {}
+}
+
+team {
+  name: {},
+  tag: {},
+  email: {},
+  members [
+    idUser {},
+    nickName {},
+    role: {},
+    entryDate: {}
+  ],
+  bibliography: {},
+  trainings: [
+    homeTeam: {},
+    visitingTeam {},
+    homePoints: {},
+    visitingPoints: {},
+    type: {},
+    date: {},
+    description: {},
+    status: {},
+    creationDate: {}
+  ],
+  championships: [
+    name: {},
+    date: {},
+    informations: {},
+    link: {},
+    creationDate: {}
+  ],
+  meetings: [
+    title: {},
+    date: {},
+    requester {},
+    guidelines [
+      name: {},
+      description: {}
+    ],
+    creationDate {}
+  ],
+  creationDate: {}
+}
