@@ -33,6 +33,7 @@ team {
     date: {},
     description: {},
     status: {},
+    demo: {},
     creationDate: {}
   ],
   championships: [
