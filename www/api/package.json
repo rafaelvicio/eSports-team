@@ -1,0 +1,29 @@
+{
+  "name": "sctee",
+  "version": "0.0.1",
+  "description": "Sistema de Controle para Times de Esportes Eletrônicos",
+  "main": "app.js",
+  "scripts": {
+    "test": "teste.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafaelvicio/TCC-CC.git"
+  },
+  "keywords": [
+    "MEAN",
+    "Stack",
+    "MongoDB",
+    "Express",
+    "AngularJS",
+    "NodeJS",
+    "Esporte",
+    "Eletronicos"
+  ],
+  "author": "Rafael 'Vicio' Augusto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rafaelvicio/TCC-CC/issues"
+  },
+  "homepage": "https://github.com/rafaelvicio/TCC-CC#readme"
+}
