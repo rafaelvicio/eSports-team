@@ -6,7 +6,7 @@ Toda a documentação do Modelo de Dados foi realizada com base na documentaçã
 
 Modelo de Dados:
 
-Entidade {
+Coleção {
   Atributo {} 
 }
 
@@ -27,7 +27,7 @@ User {
 
 Detalhamento de Dados:
 
-Entidade {
+Coleção {
   Atributo { Informações } 
 }
 
