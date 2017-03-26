@@ -1,15 +1,17 @@
 User{
+  email: {},
+  password: {},
   firstName: {},
   lastName: {},
   nickName: {},
-  email: {},
   birthday: {},
   bibliography: {},
   times: [
     name: {},
-    tag: {},
+    tag: {},  
     description: {}
   ],
+  active: {},
   creationDate: {}
 }
 
@@ -17,13 +19,13 @@ team {
   name: {},
   tag: {},
   email: {},
+  bibliography: {},
   members [
     idUser {},
     nickName {},
     role: {},
     entryDate: {}
   ],
-  bibliography: {},
   trainings: [
     homeTeam: {},
     visitingTeam {},
@@ -31,7 +33,7 @@ team {
     visitingPoints: {},
     type: {},
     date: {},
-    description: {},
+    informations: {},
     status: {},
     demo: {},
     creationDate: {}
