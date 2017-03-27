@@ -1,29 +1,22 @@
 {
-  "name": "sctee",
+  "name": "api-rest",
   "version": "0.0.1",
-  "description": "Sistema de Controle para Times de Esportes Eletrônicos",
+  "description": "API estilo REST",
   "main": "app.js",
   "scripts": {
-    "test": "teste.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rafaelvicio/TCC-CC.git"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "MEAN",
-    "Stack",
-    "MongoDB",
-    "Express",
-    "AngularJS",
-    "NodeJS",
-    "Esporte",
-    "Eletronicos"
+    "api",
+    "rest",
+    "nodeJS",
+    "mongodb"
   ],
-  "author": "Rafael 'Vicio' Augusto",
+  "author": "Vicio",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/rafaelvicio/TCC-CC/issues"
-  },
-  "homepage": "https://github.com/rafaelvicio/TCC-CC#readme"
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "mongoose": "^4.9.1"
+  }
 }
