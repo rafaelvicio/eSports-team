@@ -37,6 +37,15 @@ var schema = mongoose.Schema({
     required: true
   },
 
+  times: [
+    nome: {
+      type: String
+    },
+    tag: {
+      type: String
+    }
+  ],
+
   creationDate: {
     type: Date,
     default: Date.now,
