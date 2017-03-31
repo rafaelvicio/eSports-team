@@ -11,7 +11,7 @@ var schema = mongoose.Schema({
     required: true
   },
   grupo: {
-    type: Number
+    type: Number,
     required: true
   }
 
