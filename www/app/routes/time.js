@@ -9,6 +9,6 @@ module.exports = function(app){
   app.route('/v1/times/:id')
       .get(api.buscaPorId)
       .delete(api.removePorId)
-      .put(api.atualia);
+      .put(api.atualiza);
 
 }
