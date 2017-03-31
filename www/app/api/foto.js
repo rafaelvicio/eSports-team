@@ -8,7 +8,7 @@ api.adiciona = function(req, res) {
   model
     .create(req.body)
       .then(function(){
-        res.jston(foto);
+        res.json(foto);
 
       }, function(error) {
         console.log(error);
