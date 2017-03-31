@@ -12,7 +12,6 @@ var schema = mongoose.Schema({
 
   membros: [
     idUsuario: {type: String, required: true},
-    nickName: {type: String, required: true},
     role: {type: String, required: true},
     dataEntrada: {
       type: Date,
