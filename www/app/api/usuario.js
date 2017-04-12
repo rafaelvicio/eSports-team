@@ -27,7 +27,7 @@ api.atualiza = function(req, res) {
       }, function(error) {
         console.log(error);
         res.status(500).json(error);
-      })
+      });
 
 };
 
@@ -58,7 +58,7 @@ api.buscaPorId = function(req, res) {
         res.status(500).json(error);
       });
 
-}
+};
 
 api.removePorId = function(req, res) {
 
@@ -71,6 +71,6 @@ api.removePorId = function(req, res) {
         res.status(500).json(error);
       });
 
-}
+};
 
 module.exports = api;

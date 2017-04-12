@@ -11,4 +11,4 @@ module.exports = function(app){
       .delete(api.removePorId)
       .put(api.atualiza);
 
-}
+};
