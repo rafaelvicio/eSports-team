@@ -2,11 +2,11 @@ module.exports = function(app){
 
   var api = app.api.time;
 
-  app.route('/v1/times')
+  app.route('/api/times')
     .get(api.lista)
     .post(api.adiciona);
 
-  app.route('/v1/times/:id')
+  app.route('/api/times/:id')
       .get(api.buscaPorId)
       .delete(api.removePorId)
       .put(api.atualiza);

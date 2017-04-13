@@ -1,6 +1,6 @@
 angular.module('alurapic')
 	.controller('GruposController', function($scope, $http) {
-		$http.get('/v1/grupos')
+		$http.get('/api/grupos')
 			.success(function(grupos) {
 			$scope.grupos = grupos;
 		})
