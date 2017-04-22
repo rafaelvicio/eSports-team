@@ -11,7 +11,7 @@
 
 # dependencies
 /node_modules
-/bower_components
+/public/assets/components
 
 # IDEs and editors
 /.idea
