@@ -1,0 +1,34 @@
+{
+  "name": "sgtee",
+  "description": "Sistema de Gerenciamento para times de Esportes Eletronicos",
+  "main": "server.js",
+  "authors": [
+    "Rafael Vicio <rafaelvicio@icloud.com>"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "mean",
+    "mongodb",
+    "express",
+    "angularjs",
+    "nodejs"
+  ],
+  "homepage": "https://github.com/rafaelvicio/TCC-CC",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "Ionicons": "ionicons#^2.0.1",
+    "angular": "angularjs#^1.6.4",
+    "bower": "*",
+    "install": "^1.0.4",
+    "angular-animate": "^1.6.4",
+    "angular-route": "^1.6.4",
+    "angular-resource": "^1.6.4"
+  }
+}
