@@ -1,6 +1,21 @@
 angular.module('alurapic', ['minhasDiretivas','ngAnimate', 'ngRoute', 'ngResource', 'meusServicos'])
 	.config(function($routeProvider, $locationProvider) {
 
+		$routeProvider.when('/', {
+			templateUrl: 'partials/index.html',
+			controller: 'FotosController'
+		});
+
+		$routeProvider.when('/cadastro', {
+			templateUrl: 'partials/cadastro.html',
+			controller: 'FotosController'
+		});
+
+		$routeProvider.when('/login', {
+			templateUrl: 'partials/login.html',
+			controller: 'FotosController'
+		});
+
 		$routeProvider.when('/fotos', {
 			templateUrl: 'partials/principal.html',
 			controller: 'FotosController'
