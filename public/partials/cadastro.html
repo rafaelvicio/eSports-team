@@ -1,5 +1,6 @@
 <!-- wrapper -->
 	<div id="wrapper">
+
 		<section class="hero hero-panel" style="background-image: url(img/cover/cover-register.jpg);">
 			<div class="hero-bg"></div>
 			<div class="container relative">
@@ -10,25 +11,23 @@
 								<h3 class="panel-title"><i class="fa fa-users"></i> Faça seu Cadastro</h3>
 							</div>
 							<div class="panel-body">
-								<form>
+								<form novalidate name="formulario" class="row" ng-submit="submeter()">
 									<div class="form-group input-icon-left">
 										<i class="fa fa-user"></i>
-										<input type="text" class="form-control" name="username" placeholder="Usuário">
+										<input name="name" class="form-control" placeholder="Usuário" ng-model="usuario.name" required>
 									</div>
 									<div class="form-group input-icon-left">
 										<i class="fa fa-envelope"></i>
-										<input type="email" class="form-control" name="email" placeholder="Email">
+										<input name="email" class="form-control" placeholder="Email" ng-model="usuario.email" required>
 									</div>
 									<div class="form-group input-icon-left">
 										<i class="fa fa-lock"></i>
-										<input type="password" class="form-control" name="password" placeholder="Senha">
-									</div>
-									<div class="form-group input-icon-left">
-										<i class="fa fa-lock"></i>
-										<input type="password" class="form-control" name="password" placeholder="Confirmar Senha">
+										<input name="password" class="form-control" placeholder="Senha" ng-model="usuario.senha" required>
 									</div>
 
-									<button type="button" class="btn btn-primary btn-block">Cadastrar!</button>
+									<button type="submit" class="btn btn-primary btn-block" ng-disabled="formulario.$invalid">
+										Cadastrar
+									</button>
 
 									<div class="form-actions">
 										<div class="checkbox checkbox-primary">
@@ -39,7 +38,7 @@
 								</form>
 							</div>
 							<div class="panel-footer">
-								Ja tem uma conta? <a href="login.html">Faça login!</a>
+								Ja tem uma conta? <a href="/#/login">Faça login!</a>
 							</div>
 						</div>
 					</div>

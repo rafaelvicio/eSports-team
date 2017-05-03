@@ -3,38 +3,31 @@ var mongoose = require('mongoose');
 var schema = mongoose.Schema({
 
   email: {
-    type: String,
-    required: true
+    type: String
   },
 
   senha: {
-    type: String,
-    required: true
+    type: String
   },
 
   nome: {
-    type: String,
-    required: true
+    type: String
   },
 
   sobrenome: {
-    type: String,
-    required: true
+    type: String
   },
 
   nick: {
-    type: String,
-    required: true
+    type: String
   },
 
   aniversario: {
-    type: Date,
-    required: true
+    type: Date
   },
 
   biografia: {
-    type: String,
-    required: true
+    type: String
   },
 
   times: [
@@ -50,8 +43,7 @@ var schema = mongoose.Schema({
 
   dataCriacao: {
     type: Date,
-    default: Date.now,
-    required: true
+    default: Date.now
   }
 
 });

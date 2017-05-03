@@ -1,4 +1,4 @@
-angular.module('alurapic', ['minhasDiretivas','ngAnimate', 'ngRoute', 'ngResource', 'meusServicos'])
+angular.module('alurapic', ['minhasDiretivas','ngAnimate', 'ngRoute', 'ngResource', 'usuarioServico', 'meusServicos'])
 	.config(function($routeProvider, $locationProvider) {
 
 		$routeProvider.when('/', {
@@ -8,7 +8,7 @@ angular.module('alurapic', ['minhasDiretivas','ngAnimate', 'ngRoute', 'ngResourc
 
 		$routeProvider.when('/cadastro', {
 			templateUrl: 'partials/cadastro.html',
-			controller: 'FotosController'
+			controller: 'UsuarioController'
 		});
 
 		$routeProvider.when('/login', {
@@ -31,6 +31,6 @@ angular.module('alurapic', ['minhasDiretivas','ngAnimate', 'ngRoute', 'ngResourc
 			controller: 'FotoController'
 		});
 
-		$routeProvider.otherwise({redirectTo: '/fotos'});
+		$routeProvider.otherwise({redirectTo: '/cadastro'});
 
 	});
