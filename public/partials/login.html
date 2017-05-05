@@ -12,16 +12,18 @@
 							<div class="panel-body">
 								<a class="btn btn-block btn-social btn-facebook"><i class="fa fa-facebook"></i> Conectar com Facebook</a>
 								<div class="separator"><span>ou</span></div>
-								<form>
+								<form novalidate name="formulario" class="row" ng-submit="submeter()">
 									<div class="form-group input-icon-left">
 										<i class="fa fa-user"></i>
-										<input type="text" class="form-control" name="Usuário" placeholder="Usuário">
+										<input type="text" name="name" class="form-control" placeholder="Usuário" ng-model="usuario.name" required>
 									</div>
 									<div class="form-group input-icon-left">
 										<i class="fa fa-lock"></i>
-										<input type="password" class="form-control" name="Senha" placeholder="Senha">
+										<input type="password" name="senha" class="form-control" placeholder="Senha" ng-model="usuario.senha" required>
 									</div>
-									<button type="button" class="btn btn-primary btn-block">Login</button>
+									<button type="submit" class="btn btn-primary btn-block" ng-disabled="formulario.$invalid">
+										Login
+									</button>
 
 									<div class="form-actions">
 										<div class="checkbox checkbox-primary">
