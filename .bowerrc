@@ -1,5 +1,3 @@
 {
-  "directory": "public/assets/components",
-  "proxy": "http://proxy.dpf.gov.br:3128",
-  "https-proxy":"http://proxy.dpf.gov.br:3128"
+  "directory": "public/assets/components"
 }

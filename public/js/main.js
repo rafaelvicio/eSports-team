@@ -64,5 +64,4 @@ angular.module('alurapic', ['minhasDiretivas','ngAnimate', 'ngRoute', 'ngResourc
 		});
 
 		$routeProvider.otherwise({redirectTo: '/cadastro'});
-
 	});
