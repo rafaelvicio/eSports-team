@@ -17,7 +17,9 @@ angular.module('alurapic', ['minhasDiretivas','ngAnimate', 'ngRoute', 'ngResourc
 			controller: 'FotosController'
 		});
 
-		$routeProvider.when('/painel/index', {
+		// Painel
+
+		$routeProvider.when('/painel', {
 			templateUrl: 'partials/painel/index.html',
 			controller: 'PainelController'
 		});
