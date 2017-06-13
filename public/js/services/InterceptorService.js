@@ -4,7 +4,7 @@ angular.module('alurapic')
     var meuInterceptor = {
     	responseError: function(resposta) {
     		if (resposta.status == 401) {
-    		  $location.path('/auth');
+    		  $location.path('/');
     		}
             return $q.reject(resposta);
     	}
