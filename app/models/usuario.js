@@ -1,16 +1,21 @@
 var mongoose = require('mongoose');
+var findOrCreate = require('mongoose-findorcreate');
 
 var schema = mongoose.Schema({
 
-  email: {
-    type: String
-  },
-
-  senha: {
-    type: String
+  login: {
+    type: String,
+    require: true,
+    index: {
+      unique: true
+    }
   },
 
   nome: {
+    type: String
+  },
+
+  email: {
     type: String
   },
 
@@ -48,4 +53,5 @@ var schema = mongoose.Schema({
 
 });
 
+schema.plugin(findOrCreate);
 mongoose.model('Usuario', schema);
