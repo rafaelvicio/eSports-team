@@ -12,6 +12,5 @@ module.exports = function(app) {
 	  req.logOut(); // exposto pelo passport
 	  res.redirect('/');
 	});
-g
 
 }
