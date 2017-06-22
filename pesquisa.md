@@ -17,6 +17,8 @@ NodeJS é uma plataforma para execução de código JavaScript no servidor desen
 V8 é o motor de JavaScript com alto desempenho de código aberto do Google, escrito em C++ e usado no Chromium, NodeJS e várias outras aplicações. V8 implementa o ECMAScript conforme especificação no ECMA-262.(CHROME V8, 2017)
 A plataforma NodeJS foi criado por Ryan Dahl com a ajuda de 14 colaboradores em 2009. Com um conceito de requisições não bloqueantes que apresentam ótima performance porque utilizava todos os recursos do processadores e com baixo uso de memória.
 
+![V8 Engine](https://developers.google.com/v8/images/logo_v8_192px_clr.png)
+
 ### Single-thread
 
     Aqui vou falar sobre como o NodeJS utiliza o Single-thread
