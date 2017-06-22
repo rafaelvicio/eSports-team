@@ -18,11 +18,12 @@ V8 é o motor de JavaScript com alto desempenho de código aberto do Google, esc
 
 ![V8 Engine](https://developers.google.com/v8/images/logo_v8_192px_clr.png)
 
-A plataforma NodeJS foi criado por Ryan Dahl com a ajuda de 14 colaboradores em 2009. Com um conceito de requisições não bloqueantes que apresentam ótima performance porque utilizava todos os recursos do processadores e com baixo uso de memória.
+A plataforma NodeJS foi criado por Ryan Dahl com a ajuda de 14 colaboradores em 2009. A plataforma aplica o conteido de requisições não bloqueantes que apresentam ótima performance porque utiliza todos os recursos do processadores e com baixo uso de memória.
 
 ### Single-Thread
 
-O NodeJS implementa um gerenciador de eventos Single-Threads permitindo a realização das operações I/O não bloqueante.(THE NODE.JS EVENT LOOP, 2017). Esse gerenciador chamado de Event Loop é responsavel por delegar as operações ás suas respectivas Threads do Thread Pool. Essa operação é registrada no Event Queue onde ficam armazenada todas as operações que estão sendo realizadas, posteriormente quando alguma operação do Event Loop e finalizada, o NodeJS retorna para a operação que foi registada no Event Queue. Esse comportamento é o que torna o NodeJS Non-blocking I/O.
+O NodeJS implementa um gerenciador de eventos Single-Threads permitindo a realização das operações I/O não bloqueante.(THE NODE.JS EVENT LOOP, 2017). 
+Esse gerenciador chamado de Event Loop é responsavel por delegar as operações ás suas respectivas Threads do Thread Pool. Essa operação é registrada no Event Queue onde ficam armazenada todas as operações que estão sendo realizadas, posteriormente quando alguma operação do Event Loop e finalizada, o NodeJS retorna para a operação que foi registada no Event Queue e da continuidade aos processos dessa operação. Esse comportamento é o que torna o NodeJS Non-blocking I/O.
 
 ![Event Loop](https://cdn-images-1.medium.com/max/800/1*S8jfqYQNkMuyWEk_5lxGYQ.jpeg)
 
