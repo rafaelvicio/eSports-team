@@ -4,6 +4,9 @@ O termo MEAN é um acrônimo que representa quatro tecnologias: MongoDB um banco
 
 ## MongoDB
 
+O MongoDB é um banco de dados NoSQL de falta performance que possue código aberto, orientado a documentos caracterizado como schema-free e escrito em C++. Os dados são persistidos em coleções de dados que são representados usando o BSON.(MONGODB, 2017) O BSON é um formato de representação de documentos muito similar ao JSON. Suportanto todos os formatos encontrados no JSON como String, Inteiros, boleano e tambem tipos de dados como data, binary data, regular expression e code.(BSON, 2017)
+
+
 ## Express
 
 ## AngularJS
@@ -38,5 +41,9 @@ Com todas essas características que tornam o NodeJS uma plataforma excelente pa
 NODEJS. Evented I/O for V8 JavaScript 2013. Disponível em < http://nodejs.org/>. Acesso em: 19 jun. 2017.
 CHROME V8. Disponível em https://developers.google.com/v8/. Acesso em: 22 jun. 2017.
 THE NODE.JS EVENT LOOP. Disponível em https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/. Acesso em: 22 jun. 2017
+
+BATISTA, F. et al. MongoDB: Banco de dados orientado a documento. 2012.Disponível em: http://MongoDB.machinario.com/
+MONGODB. Disponível em https://www.mongodb.com/
+BSON. Binary JSON. Disponível em http://bsonspec.org/
  
 NodeJS Paypal: https://www.paypal-engineering.com/2013/11/22/node-js-at-paypal/
