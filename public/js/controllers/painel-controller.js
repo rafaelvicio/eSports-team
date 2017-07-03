@@ -4,19 +4,17 @@ angular.module('alurapic')
 		$scope.usuario = {};
 		$scope.mensagem = '';
 
-		$scope.user = {username: ''};
+		$scope.usuario = {username: ''};
 		$scope.error_message = '';
 
-		$scope.login = function() {
-			$http.post('/auth/github', $scope.user).success(function(data) {
-				if(data.state == 'success') {
-					$rootScope.authenticated = true;
-					$rootScope.current_user = data.user.username;
-					$location.path('/painel/index');
-				} else {
-					$scope.error_message = data.message;
-				}
-			});
+		$scope.login = function(data) {
+			$http.get('/auth/user')
+				.then(function(){
+					$scope.usuario = data.user.username;
+				})
+				.catch(function(){
+					$scope.error_message = 'Deu ruim';
+				})
 		};
 
 		$scope.submeter = function() {
