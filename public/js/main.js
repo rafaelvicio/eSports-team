@@ -2,9 +2,11 @@ angular.module('alurapic', ['minhasDiretivas','ngAnimate', 'ngRoute', 'ngResourc
 	.config(function($routeProvider, $locationProvider, $httpProvider) {
 
 		$httpProvider.interceptors.push('meuInterceptor');
+		$httpProvider.interceptors.push('usuarioInterceptor');
 
 		$routeProvider.when('/', {
-			templateUrl: 'partials/index.html'
+			templateUrl: 'partials/index.html',
+			controller: 'PainelController'
 		});
 
 		$routeProvider.when('/cadastro', {
