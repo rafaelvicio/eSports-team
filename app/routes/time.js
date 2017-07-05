@@ -1,22 +1,16 @@
-function verificaAutenticacao(req, res, next) {
-  if (req.isAuthenticated()) {
-    return next();
-  } else {
-    res.status('401').json('Não autorizado');
-  }
-}
+var auth = require('../../config/auth').auth;
 
 module.exports = function(app){
 
   var api = app.api.time;
 
   app.route('/api/times')
-    .get(verificaAutenticacao, api.lista)
-    .post(verificaAutenticacao, api.adiciona);
+    .get(auth.authenticate, api.lista)
+    .post(auth.authenticate, api.adiciona);
 
   app.route('/api/times/:id')
-      .get(verificaAutenticacao, api.buscaPorId)
-      .delete(verificaAutenticacao, api.removePorId)
-      .put(verificaAutenticacao, api.atualiza);
+      .get(auth.authenticate, api.buscaPorId)
+      .delete(auth.authenticate, api.removePorId)
+      .put(auth.authenticate, api.atualiza);
 
 };
