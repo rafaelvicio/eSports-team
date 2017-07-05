@@ -7,7 +7,7 @@ var schema = mongoose.Schema({
      required: true
   },
   
-  password: {
+  senha: {
     type: String,
     required: true
   },
