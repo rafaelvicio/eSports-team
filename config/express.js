@@ -8,7 +8,6 @@ app.use(bodyParser.json());
 
 var auth = require('./auth').auth;
  
-// JWT
 app.use(auth.initialize());
 
 consign({ cwd: 'app'})

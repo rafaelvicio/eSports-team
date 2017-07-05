@@ -1,4 +1,4 @@
-var login = require('../../config/auth').login;
+var auth = require('../../config/auth').auth;
 
 module.exports = function(app){
 
