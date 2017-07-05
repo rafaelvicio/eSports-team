@@ -1,7 +1,7 @@
 angular.module('alurapic', ['minhasDiretivas','ngAnimate', 'ngRoute', 'ngResource', 'usuarioServico', 'meusServicos'])
 	.config(function($routeProvider, $locationProvider, $httpProvider) {
 
-		$httpProvider.interceptors.push('meuInterceptor');
+		$httpProvider.interceptors.push('tokenInterceptor');
 
 		$routeProvider.when('/', {
 			templateUrl: 'partials/index.html'
@@ -9,12 +9,12 @@ angular.module('alurapic', ['minhasDiretivas','ngAnimate', 'ngRoute', 'ngResourc
 
 		$routeProvider.when('/cadastro', {
 			templateUrl: 'partials/cadastro.html',
-			controller: 'UsuarioController'
+			controller: 'AuthController'
 		});
 
 		$routeProvider.when('/login', {
 			templateUrl: 'partials/login.html',
-			controller: 'FotosController'
+			controller: 'AuthController'
 		});
 
 		// Painel

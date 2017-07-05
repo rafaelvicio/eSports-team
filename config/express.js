@@ -6,13 +6,12 @@ var bodyParser = require('body-parser');
 app.use(express.static('./public'));
 app.use(bodyParser.json());
 
-var auth = require('./auth').auth;
- 
-app.use(auth.initialize());
+app.set('secret', 'homemavestruz'); 
 
 consign({ cwd: 'app'})
   .include('models')
   .then('api')
+  .then('routes/auth.js')
   .then('routes')
   .into(app);
 
