@@ -1,16 +1,10 @@
-var passport = require('passport');
+var login = require('../../config/auth').login;
 
-module.exports = function(app) {
+module.exports = function(app){
 
-	app.get('/auth/github', passport.authenticate('github'));
-	app.get('/auth/github/callback',
-			passport.authenticate('github', {
-		successRedirect: '/painel/index'
-	}));
+  var api = app.api.auth;
 
-	app.get('/logout', function(req, res) {
-	  req.logOut(); // exposto pelo passport
-	  res.redirect('/');
-	});
+  app.route('/api/auth/login')
+    .post(api.login);
 
-}
+};

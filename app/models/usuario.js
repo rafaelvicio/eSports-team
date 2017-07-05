@@ -3,12 +3,16 @@ var findOrCreate = require('mongoose-findorcreate');
 
 var schema = mongoose.Schema({
 
-  login: {
+  name: {
     type: String,
-    require: true,
+    required: true,
     index: {
       unique: true
-    }
+  },
+  
+  password: {
+    type: String,
+    required: true
   },
 
   nome: {
