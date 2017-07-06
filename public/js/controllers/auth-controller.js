@@ -1,8 +1,21 @@
 angular.module('alurapic')
-	.controller('AuthController', function($scope, $http, $location) {
+	.controller('AuthController', function($scope, $http, $location, recursoUsuario, $routeParams, cadastroDeUsuarios) {
 
 	$scope.usuario = {};
     $scope.mensagem = '';
+
+    $scope.cadastrar = function() {
+        	if ($scope.formulario.$valid) {
+				cadastroDeUsuarios.cadastrar($scope.usuario)
+				.then(function(dados) {
+					$scope.mensagem = dados.mensagem;
+					if (dados.inclusao) $scope.usuario = {};
+				})
+				.catch(function(erro) {
+					$scope.mensagem = erro.mensagem;
+				});
+			}
+		};
 
     $scope.autenticar = function() {
 
