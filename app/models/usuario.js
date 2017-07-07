@@ -4,7 +4,8 @@ var schema = mongoose.Schema({
 
   login: {
     type: String, 
-     required: true
+    unique: true,
+    required: true
   },
   
   senha: {

@@ -5,14 +5,23 @@ angular.module('alurapic')
     $scope.mensagem = '';
 
     $scope.cadastrar = function() {
+
         	if ($scope.formulario.$valid) {
 				cadastroDeUsuarios.cadastrar($scope.usuario)
 				.then(function(dados) {
-					$scope.mensagem = dados.mensagem;
-					if (dados.inclusao) $scope.usuario = {};
+                    $scope.mensagem = 'Cadastro realizado com sucesso!';
+                    if (usuario.inclusao) {
+                        $scope.usuario = {};
+                         $scope.mensagem = 'Cadastro realizado com sucesso!';
+                    } else {
+                        $scope.mensagem = 'Atualização realizada com sucesso!';
+                    }
 				})
+
 				.catch(function(erro) {
+                    console.log('caiu no catch do cadastrar')
 					$scope.mensagem = erro.mensagem;
+                     console.log(erro.mensagem);
 				});
 			}
 		};

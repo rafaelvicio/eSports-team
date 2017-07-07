@@ -10,11 +10,11 @@ api.adiciona = function(req, res) {
       .then(function(){
         res.json(usuario);
 
-      }, function(error) {
+      })
+      .catch(function(error) {
         console.log(error);
         res.status(500).json(error);
-      });
-
+      })
 };
 
 api.atualiza = function(req, res) {

@@ -15,26 +15,27 @@ angular.module('usuarioServico', ['ngResource'])
 				if(usuario._id) {
 					recursoUsuario.update({usuarioId: usuario._id}, usuario, function() {
 						resolve({
-							mensagem: 'Usuario ' + usuario.nome + ' atualizada com sucesso',
+							mensagem: 'Usuario ' + usuario.login + ' atualizada com sucesso',
 							inclusao: false
 						});
 					}, function(erro) {
 						console.log(erro);
 						reject({
-							mensagem: 'Não foi possível atualizar o usuario ' + usuario.nome
+							mensagem: 'Não foi possível atualizar o usuario ' + usuario.login
 						});
 					});
 
 				} else {
 					recursoUsuario.save(usuario, function() {
+						console.log('não tem id');
 						resolve({
-							mensagem: 'Usuario ' + usuario.nome + ' incluída com sucesso',
+							mensagem: 'Usuario ' + usuario.login + ' incluída com sucesso',
 							inclusao: true
 						});
 					}, function(erro) {
 						console.log(erro);
 						reject({
-							mensagem: 'Não foi possível incluir a usuario ' + usuario.nome
+							mensagem: 'Não foi possível incluir a usuario ' + usuario.login
 						});
 					});
 				}
