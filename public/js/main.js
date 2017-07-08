@@ -1,7 +1,8 @@
-angular.module('alurapic', ['minhasDiretivas','ngAnimate', 'ngRoute', 'ngResource', 'usuarioServico', 'meusServicos'])
+angular.module('alurapic', ['minhasDiretivas','ngAnimate', 'ngRoute', 'ngResource'])
 	.config(function($routeProvider, $locationProvider, $httpProvider) {
 
 		$httpProvider.interceptors.push('tokenInterceptor');
+		$httpProvider.interceptors.push('meuInterceptor');
 
 		$routeProvider.when('/', {
 			templateUrl: 'partials/index.html'
