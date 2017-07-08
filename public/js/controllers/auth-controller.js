@@ -16,9 +16,7 @@ angular.module('alurapic')
                     } else {
                         $scope.mensagem = 'Atualização realizada com sucesso!';
                     }
-				})
-
-				.catch(function(erro) {
+				}).catch(function(erro) {
                     console.log('caiu no catch do cadastrar')
 					$scope.mensagem = erro.mensagem;
                      console.log(erro.mensagem);
