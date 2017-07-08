@@ -3,7 +3,8 @@ const  model = mongoose.model('Usuario')
 
 const adiciona = (req, res) => 
   model.create(req.body)
-        .then( ( usuario ) => res.json( usuario ) )
+        .then( ( usuario ) => 
+          res.status( 200 ).json( usuario ) )
         .catch( ( erro ) => {
           console.log( erro )
           res.status( 500 ).json( erro )
