@@ -1,4 +1,4 @@
-angular.module('alurapic', ['minhasDiretivas','ngAnimate', 'ngRoute', 'ngResource'])
+	angular.module('alurapic', ['minhasDiretivas','ngAnimate', 'ngRoute', 'ngResource'])
 	.config(function($routeProvider, $locationProvider, $httpProvider) {
 
 		$httpProvider.interceptors.push('tokenInterceptor');
@@ -22,11 +22,6 @@ angular.module('alurapic', ['minhasDiretivas','ngAnimate', 'ngRoute', 'ngResourc
 
 		$routeProvider.when('/painel', {
 			templateUrl: 'partials/painel/index.html',
-			controller: 'PainelController'
-		});
-
-		$routeProvider.when('/perfil/:usuarioName', {
-			templateUrl: 'partials/perfil/index.html',
 			controller: 'PainelController'
 		});
 
@@ -67,5 +62,15 @@ angular.module('alurapic', ['minhasDiretivas','ngAnimate', 'ngRoute', 'ngResourc
 			controller: 'FotoController'
 		});
 
-		$routeProvider.otherwise({redirectTo: '/cadastro'});
+		// Eros
+
+		$routeProvider.when('/404', {
+			templateUrl: 'partials/404.html'
+		});
+
+		$routeProvider.when('/500', {
+			templateUrl: 'partials/500.html'
+		});
+
+		$routeProvider.otherwise({redirectTo: '/'});
 	});

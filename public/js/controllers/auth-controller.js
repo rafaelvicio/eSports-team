@@ -6,8 +6,17 @@ angular.module('alurapic')
 
     $scope.cadastrar = function() {
 
-        console.log('testeeeee')
+        var usuario = $scope.usuario;
 
+        $http.post('/api/usuarios', usuario)
+            .then(function() {
+                console.log('deu certo')
+                $scope.mensagem = 'Usuário cadastrado com sucesso!';
+            })
+            .catch(function(){
+                console.log('deu ruim')
+                $scope.mensagem = 'Usuário não pode ser cadastrado!';
+            })
         
 		};
 

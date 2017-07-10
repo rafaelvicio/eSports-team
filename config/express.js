@@ -11,6 +11,7 @@ consign({ cwd: 'app'})
   .include('models')
   .then('api')
   .then('routes/auth.js')
+  .then('routes/painel.js')
   .then('routes')
   .into(app);
 
