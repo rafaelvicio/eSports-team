@@ -3,23 +3,22 @@ angular.module('alurapic')
 
         var interceptor = {};
 
-        interceptor.request = function(config) {
-            // enviar o token na requisição
-            config.headers = config.headers || {};
-            if ($window.sessionStorage.token) {
-                console.log('Enviando token já obtido em cada requisição');
-                config.headers['x-access-token'] = $window.sessionStorage.token;
-            }
-            return config;
-        },
-
         interceptor.response = function (response) {
             var token = response.headers('x-access-token');
-            if (token != null) {
-                $window.sessionStorage.token = token;
-                console.log('Token no session storage: ', token);
-            } 
+            if (token) {
+                $window.localStorage.token = token;
+            }
             return response;
+        },
+
+        interceptor.request = function (config) {
+            config.headers = config.headers || {};
+
+            if ($window.localStorage.token) {
+                config.headers['x-access-token'] = $window.localStorage.token;
+            }
+
+            return config;
         },
 
         interceptor.responseError = function(rejection) {

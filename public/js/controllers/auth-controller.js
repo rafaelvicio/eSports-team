@@ -1,20 +1,23 @@
 angular.module('alurapic')
-	.controller('AuthController', function($scope, $http, $location, recursoUsuario, $routeParams, cadastroDeUsuarios) {
+	.controller('AuthController', function($scope, $http, $location, $routeParams) {
 
 	$scope.usuario = {};
     $scope.mensagem = '';
 
     $scope.cadastrar = function() {
-        	if ($scope.formulario.$valid) {
-				cadastroDeUsuarios.cadastrar($scope.usuario)
-				.then(function(dados) {
-					$scope.mensagem = dados.mensagem;
-					if (dados.inclusao) $scope.usuario = {};
-				})
-				.catch(function(erro) {
-					$scope.mensagem = erro.mensagem;
-				});
-			}
+
+        var usuario = $scope.usuario;
+
+        $http.post('/api/usuarios', usuario)
+            .then(function() {
+                console.log('deu certo')
+                $scope.mensagem = 'Usuário cadastrado com sucesso!';
+            })
+            .catch(function(){
+                console.log('deu ruim')
+                $scope.mensagem = 'Usuário não pode ser cadastrado!';
+            })
+        
 		};
 
     $scope.autenticar = function() {

@@ -12,6 +12,10 @@
 							</div>
 							<div class="panel-body">
 
+								<div class="alert alert-warning" ng-show="mensagem">
+									{{mensagem}}
+								</div>
+
 								<div class="alert alert-warning" ng-show="formulario.login.$error.minlength">
 									Login deve ter mais de 5 caracteres
 								</div>
@@ -34,11 +38,13 @@
 										<input type="text" name="login" class="form-control" placeholder="Login" ng-model="usuario.login"
 										ng-minlength="5" ng-maxlength="22" required>
 									</div>
+									</br>
 									<div class="form-group input-icon-left" ng-class="{'form-group has-warning' : formulario.email.$invalid && !formulario.email.$pristine}">
 										<i class="fa fa-envelope"></i>
 										<input type="email" name="email" class="form-control" placeholder="Email" ng-model="usuario.email"
 									 	ng-maxlength="35" required>
 									</div>
+									</br>
 									<div class="form-group input-icon-left" ng-class="{'form-group has-warning' : formulario.senha.$invalid && !formulario.senha.$pristine}">
 										<i class="fa fa-lock"></i>
 										<input type="password" name="senha" class="form-control" placeholder="Senha" ng-model="usuario.senha"

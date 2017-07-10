@@ -8,4 +8,7 @@ module.exports = function(app){
   app.route('/api/auth/verificar')
     .get(api.verificaToken);
 
+  app.route('/*')
+    .get(api.verificaToken);
+
 };
