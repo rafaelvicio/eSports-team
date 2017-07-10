@@ -1,6 +1,7 @@
-angular.module('alurapic', ['minhasDiretivas','ngAnimate', 'ngRoute', 'ngResource', 'usuarioServico', 'meusServicos'])
+	angular.module('alurapic', ['minhasDiretivas','ngAnimate', 'ngRoute', 'ngResource'])
 	.config(function($routeProvider, $locationProvider, $httpProvider) {
 
+		$httpProvider.interceptors.push('tokenInterceptor');
 		$httpProvider.interceptors.push('meuInterceptor');
 		$httpProvider.interceptors.push('usuarioInterceptor');
 
@@ -11,23 +12,18 @@ angular.module('alurapic', ['minhasDiretivas','ngAnimate', 'ngRoute', 'ngResourc
 
 		$routeProvider.when('/cadastro', {
 			templateUrl: 'partials/cadastro.html',
-			controller: 'UsuarioController'
+			controller: 'AuthController'
 		});
 
 		$routeProvider.when('/login', {
 			templateUrl: 'partials/login.html',
-			controller: 'FotosController'
+			controller: 'AuthController'
 		});
 
 		// Painel
 
 		$routeProvider.when('/painel', {
 			templateUrl: 'partials/painel/index.html',
-			controller: 'PainelController'
-		});
-
-		$routeProvider.when('/perfil/:usuarioName', {
-			templateUrl: 'partials/perfil/index.html',
 			controller: 'PainelController'
 		});
 
@@ -68,5 +64,15 @@ angular.module('alurapic', ['minhasDiretivas','ngAnimate', 'ngRoute', 'ngResourc
 			controller: 'FotoController'
 		});
 
-		$routeProvider.otherwise({redirectTo: '/cadastro'});
+		// Eros
+
+		$routeProvider.when('/404', {
+			templateUrl: 'partials/404.html'
+		});
+
+		$routeProvider.when('/500', {
+			templateUrl: 'partials/500.html'
+		});
+
+		$routeProvider.otherwise({redirectTo: '/'});
 	});

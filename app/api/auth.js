@@ -1,23 +1,48 @@
-var login = require('../../config/auth').login;
-
 var mongoose = require('mongoose');
-var api = {};
+var jwt  = require('jsonwebtoken');
 
-var model = mongoose.model('Usuario');
+module.exports = function(app) {
 
-api.login = function(req, res) {
+     var api = {};
+     var model = mongoose.model('Usuario');
 
-  var name = req.body.name;
-  var password = req.body.password;
+     api.autentica = function(req, res) {
 
-  login(name, password, function(result){
-      if(result){
-          res.json(result);
-      } else {
-          res.status(401).json({message: 'erro de autenticacao'});
-      }
-  })
+         model.findOne({
+             login: req.body.login,
+             senha: req.body.senha
+         })
+         .then(function(usuario) {
+             if (!usuario) {
+                 res.sendStatus(401);
+             } else {
+                 var token = jwt.sign( {login: usuario.login}, app.get('secret'), {
+                     expiresIn: 86400
+                 });
+                 res.set('x-access-token', token);
+                 res.end();
+             }
+         });
+     };
 
+    api.verificaToken = function(req, res, next) {
+
+         var token = req.headers['x-access-token'];
+
+         if (token) {
+             jwt.verify(token, app.get('secret'), function(err, decoded) {
+                 if (err) {
+                     return res.sendStatus(401);
+                 } else {
+                     req.usuario = decoded;  
+                     console.log('Usuario: ' + req.usuario.login);
+                     next();
+                  }
+            });
+        } else {
+            return res.sendStatus(401);
+          }
+    }
+
+    return api;
 };
-
-module.exports = api;

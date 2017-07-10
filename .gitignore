@@ -2,5 +2,5 @@
 # Created by https://www.gitignore.io/api/node,bower,angular
 
 # dependencies
-/node_modules
-/public/assets/components
+#/node_modules
+#/public/assets/components
