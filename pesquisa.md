@@ -6,6 +6,14 @@ O termo MEAN é um acrônimo que representa quatro tecnologias: MongoDB um banco
 
 O MongoDB é um banco de dados NoSQL de falta performance que possue código aberto, orientado a documentos caracterizado como schema-free e escrito em C++. Os dados são persistidos em coleções de dados que são representados usando o BSON.(MONGODB, 2017) O BSON é um formato de representação de documentos muito similar ao JSON. Suportanto todos os formatos encontrados no JSON como String, Inteiros, boleano e tambem tipos de dados como data, binary data, regular expression e code.(BSON, 2017)
 
+![MongoDB](https://webassets.mongodb.com/_com_assets/cms/MongoDB-Logo-5c3a7405a85675366beb3a5ec4c032348c390b3f142f5e6dddf1d78e2df5cb5c.png)
+
+### Orientado a Documentos
+
+Banco de dados orientados a documentos podem representar estrutura de dados bastante complexas conhecidas como documentos. Os documentos são representações de um conjunto de chaves e valores que podem armazenar uma grande quantidade de informações. 
+
+![Representação Documento](https://docs.mongodb.com/v3.2/_images/data-model-denormalized.png)
+
 
 ## Express
 
