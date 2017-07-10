@@ -3,7 +3,6 @@
 
 		$httpProvider.interceptors.push('tokenInterceptor');
 		$httpProvider.interceptors.push('meuInterceptor');
-		$httpProvider.interceptors.push('usuarioInterceptor');
 
 		$routeProvider.when('/', {
 			templateUrl: 'partials/index.html',
