@@ -10,7 +10,7 @@ O MongoDB é um banco de dados NoSQL de falta performance que possue código abe
 
 ### Orientado a Documentos
 
-Banco de dados orientados a documentos podem representar estrutura de dados bastante complexas conhecidas como documentos. Os documentos são representações de um conjunto de chaves e valores que podem armazenar uma grande quantidade de informações. 
+Banco de dados orientados a documentos armazenam os dados em formato chave-valor em uma estrutura de dados chamada documentos, essas dados são armazenados no formato JSON(JavaScript Object Notation), padrão que visa uma fácil legibilidade e independência da linguagem.[2]
 
 ![Representação Documento](https://docs.mongodb.com/v3.2/_images/data-model-denormalized.png)
 
@@ -45,6 +45,8 @@ Com todas essas características que tornam o NodeJS uma plataforma excelente pa
 # REFERENCIAS
  
 [1]: Valeri Karpov. The mean stack: Mongodb, expressjs, angularjs and node.js. 2013.
+[2] “Introducing JSON”. http://json.org/. Acessado em 14/05/2010. 
+
  
 NODEJS. Evented I/O for V8 JavaScript 2013. Disponível em < http://nodejs.org/>. Acesso em: 19 jun. 2017.
 CHROME V8. Disponível em https://developers.google.com/v8/. Acesso em: 22 jun. 2017.
