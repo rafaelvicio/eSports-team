@@ -19,11 +19,8 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css",
-        "../bootstrap-4.0.0-alpha.6-dist/css/bootstrap.min.css"
       ],
       "scripts": [
-        "../bootstrap-4.0.0-alpha.6-dist/js/bootstrap.min.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {
