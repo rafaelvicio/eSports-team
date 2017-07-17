@@ -20,10 +20,10 @@
       "prefix": "app",
       "styles": [
         "styles.css",
-        "../node_modules/materialize-css/dist/css/materialize.min.css"
+        "../bootstrap-4.0.0-alpha.6-dist/css/bootstrap.min.css"
       ],
       "scripts": [
-        "../node_modules/materialize-css/dist/js/materialize.min.js"
+        "../bootstrap-4.0.0-alpha.6-dist/js/bootstrap.min.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {

@@ -1,47 +1,87 @@
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  <a class="navbar-brand" href="#">
+    <img src="https://v4-alpha.getbootstrap.com/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
+    sSports Team
+  </a>
 
-<div class="navbar-fixed">
-  <nav>
-    <div class="nav-wrapper">
-      <a href="#" class="brand-logo">Logo</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="/">Home</a></li>
-        <li><a href="/painel">Painel</a></li>
-        <li><a href="/sobre">Sobre</a></li>
-        <li><a href="/contato">Contato</a></li>
-      </ul>
-    </div>
-  </nav>
-</div>
-        
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Cadastro</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Painel</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Sobre</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contato</a>
+      </li>
+      
+    </ul>
+     <span class="navbar-text">
+      Bem-vindo ao eSports Team
+    </span>
+  </div>
+</nav>
+
 <router-outlet></router-outlet>
 
-<footer class="page-footer">
-      <div class="container">
+<footer class="footer bg-faded">
+    <div class="container">
         <div class="row">
-          <div class="col l4 s12">
-            <h5 class="white-text">Sobre a eSports Team</h5>
-            <p class="grey-text text-lighten-4">We hope you have enjoyed using Materialize! If you feel Materialize has helped you out and want to support the team, send us over a donation! Any amount would help support and continue development on this project and is greatly appreciated.</p>
-          </div>     
-          <div class="col l4 s12">
-            <h5 class="white-text">Nosso Newsletters</h5>
-            <p class="grey-text text-lighten-4">Invreva-se em nosso newsletters e fique por dentro de todas as novidades sobre a nossa plataforma!</p>
-            <a class="btn waves-effect waves-light red lighten-3" target="_blank" href="https://gitter.im/Dogfalo/materialize">Insvreva-se</a>
-          </div>
-          <div class="col l4 s12">
-                <h5 class="white-text">Nossos Links</h5>
-                <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!">Home</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Painel</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Blog</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Sobre</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Contato</a></li>
+            <div class="col-md-5">
+                <h5><i class="fa fa-road"></i> eSports Team</h5>
+                <div class="row">
+                    <div class="col-6">
+                        <ul class="list-unstyled">
+                            <li><a href="" class="text-muted">Home</a></li>
+                            <li><a href="" class="text-muted">Benefits</a></li>
+                            <li><a href="" class="text-muted">Sobre</a></li>
+                            <li><a href="" class="text-muted">Contato</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6">
+                        <ul class="list-unstyled">
+                            <li><a href="" class="text-muted">Documentation</a></li>
+                            <li><a href="" class="text-muted">Support</a></li>
+                            <li><a href="" class="text-muted">Legal Terms</a></li>
+                            <li><a href="" class="text-muted">About</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="nav">
+                    <li class="nav-item"><a href="" class="nav-link pl-0"><i class="fa fa-facebook fa-lg"></i></a></li>
+                    <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-twitter fa-lg"></i></a></li>
+                    <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-github fa-lg"></i></a></li>
+                    <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-instagram fa-lg"></i></a></li>
                 </ul>
-          </div>
+                <br>
+            </div>
+            <div class="col-md-2">
+                <h5 class="text-md-right">Entre em contato</h5>
+                <hr>
+            </div>
+            <div class="col-md-5">
+                <form>
+                    <fieldset class="form-group">
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Seu email...">
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <textarea class="form-control" id="exampleMessage" placeholder="Sua mensagem..."></textarea>
+                    </fieldset>
+                    <fieldset class="form-group text-xs-right">
+                        <button type="button" class="btn btn-secondary-outline btn-lg">Enviar</button>
+                    </fieldset>
+                </form>
+            </div>
         </div>
-      </div>
-      <div class="footer-copyright">
-        <div class="container">
-        Copyright © 2017 eSports Team, Todos os direitos reservados.
-        </div>
-      </div>
-    </footer>
+    </div>
+</footer>
