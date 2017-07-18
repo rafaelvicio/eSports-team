@@ -9,6 +9,8 @@ import { HomeComponent } from './home/home.component';
 import { PainelComponent } from './painel/painel.component';
 import { LoginComponent } from './login/login.component';
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
