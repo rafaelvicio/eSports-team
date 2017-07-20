@@ -1,5 +1,6 @@
 import { Http, Headers, Response } from '@angular/http';
 import { UsuarioComponent } from './usuario.component';
+import 'rxjs/add/operator/toPromise';
 import { Observable } from 'rxjs';
 import { Injectable } from '@angular/core';
 
@@ -16,24 +17,26 @@ export class UsuarioService {
         this.headers.append('Content-Type', 'application/json');
   }
 
-  lista(): Observable<UsuarioComponent[]>{
+  lista(): Promise<UsuarioComponent[]>{
       return this.http.get(this.url)
-        .map(res => res.json());
+        .toPromise()
+        .then(res => res.json())
+        .catch();
   }
 
-  cadastrar(usuario: UsuarioComponent) {
+  cadastrar(usuario: UsuarioComponent): Promise<UsuarioComponent> {
       if(usuario._id){
           return this.http.put(this.url + '/' + usuario._id, JSON.stringify(usuario),
             { headers: this.headers })
             .toPromise()
-                .then()
-                .catch()
+                .then(res => res.json())
+                .catch();
       } else {
           return this.http.post(this.url, JSON.stringify(usuario),
           { headers: this.headers })
           .toPromise()
-            .then()
-            .catch()
+            .then(res => res.json())
+            .catch();
       }
   }
 
