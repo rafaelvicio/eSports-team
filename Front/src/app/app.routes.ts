@@ -1,13 +1,13 @@
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { CadastroComponent } from './cadastro/cadastro.component';
+import { CadastroUsuarioComponent } from './cadastro-usuario/cadastro-usuario.component';
 import { LoginComponent } from './login/login.component';
 import { PainelComponent } from './painel/painel.component';
 
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'cadastro', component: CadastroComponent },
+  { path: 'cadastro', component: CadastroUsuarioComponent },
   { path: 'login', component: LoginComponent },
   { path: 'painel', component: PainelComponent },
   { path: '**', redirectTo: '' }

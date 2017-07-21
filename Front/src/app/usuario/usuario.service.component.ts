@@ -9,7 +9,7 @@ export class UsuarioService {
 
     http: Http;
     headers: Headers;
-    url: string = 'http://localhost:3000/v1/fotos';
+    url: string = 'http://localhost:3000/v1/usuarios';
 
     constructor(http: Http) {
         this.http = http;
@@ -24,7 +24,7 @@ export class UsuarioService {
         .catch();
   }
 
-  cadastrar(usuario: UsuarioComponent): Promise<UsuarioComponent> {
+  cadastrar(usuario: UsuarioComponent): Promise<any> {
       if(usuario._id){
           return this.http.put(this.url + '/' + usuario._id, JSON.stringify(usuario),
             { headers: this.headers })
@@ -40,13 +40,14 @@ export class UsuarioService {
       }
   }
 
-  remove(usuario: UsuarioComponent) {
+  remove(usuario: UsuarioComponent): Observable<Response> {
       return this.http.delete(this.url + '/' + usuario._id);
   }
 
-  buscarPorId(id: string) {
-      return this.http.get(this.url + '/' + id)
-        .map( res => res.json())
-  }
+  buscarPorId(id: string): Observable<UsuarioComponent> {
+     return this.http
+      .get(this.url + '/' + id)
+      .map(res => res.json());
+    }
 
 }
