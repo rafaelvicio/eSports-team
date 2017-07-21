@@ -9,7 +9,7 @@ import { PainelComponent } from './painel/painel.component';
 import { LoginComponent } from './login/login.component';
 import { CadastroUsuarioComponent } from './cadastro-usuario/cadastro-usuario.component';
 import { UsuarioComponent } from './usuario/usuario.component';
-import { UsuarioService } from './usuario/usuario.component.service'
+import { UsuarioService } from './usuario/usuario.service.component';
 
 
 
