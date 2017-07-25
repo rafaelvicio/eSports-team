@@ -8,6 +8,15 @@ Atualmente as organizações de esporte eletrônico não dispõem de qualquer fe
 
 Desenvolver uma plataforma web que tem como objetivo principal contribuir com o desenvolvimento das equipes de esporte eltrônico atravez de uma aplicação web que vai fornecer funcionalidades como gerenciamento da equipe, cronograma de treinos, calendario de eventos e demais funcionalidades basicas.
 
+O seguinte trabalho tem como objetivo apresentar um sistema que contribua com o desenvolvimento de equipes de esportes eletronicos .
+
+## Objetivos Especificos
+
+Estes são os objetivos especificos desse trabalho:
+
+* Desenvolver um sistema que ajuda a controlar as informações dos usuários
+* Criar uma funcionalidade que ajude na organização da agenda dos integrantes do time
+
 # MEAN
 
 O termo MEAN é um acrônimo que representa quatro tecnologias: MongoDB um banco não relacional orientado a documentos, Express um framework de rotas, AngularJS como framework front-end o NodeJS como plataforma para execução de código JavaScript no brack-end. O termo foi cunhado em 2013 por Valeri Karpov do time do MongoDB após a sua participação em um Hackathon onde utilizou essa Stack de tecnologias.[1]
