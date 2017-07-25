@@ -4,15 +4,17 @@
 
 Atualmente as organizações de esporte eletrônico não dispõem de qualquer ferramenta especializadas para o gerenciamento do seu negócio, muitas utilizam-se de ferramentas genéricas como planilhas e documentos para fazer o seu planejamento. Um software especializado em um negócio específico pode garantir benefícios, como também contribuir para o aumento de produtividade
 
+## Objetivos
+
+O seguinte trabalho possui como os seguintes objetivos gerais e especificos para obter sucesso em sua realização.
+
 ## Objetivos Gerais
 
 Desenvolver uma plataforma web que tem como objetivo principal contribuir com o desenvolvimento das equipes de esporte eltrônico atravez de uma aplicação web que vai fornecer funcionalidades como gerenciamento da equipe, cronograma de treinos, calendario de eventos e demais funcionalidades basicas.
 
-O seguinte trabalho tem como objetivo apresentar um sistema que contribua com o desenvolvimento de equipes de esportes eletronicos .
+* Apresentar um sistema que contribua com o desenvolvimento de equipes de esportes eletronicos. Esse sistema deve auxiliar os times a organizar seus compromissoes e objetivos.
 
 ## Objetivos Especificos
-
-Estes são os objetivos especificos desse trabalho:
 
 * Desenvolver um sistema que ajuda a controlar as informações dos usuários
 * Criar uma funcionalidade que ajude na organização da agenda dos integrantes do time
