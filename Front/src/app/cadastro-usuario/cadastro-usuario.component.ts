@@ -11,8 +11,11 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class CadastroUsuarioComponent implements OnInit {
 
-  constructor(private usuario: UsuarioComponent, private service: UsuarioService, private router: ActivatedRoute) { 
+  usuario: UsuarioComponent = new UsuarioComponent();
 
+  constructor( private service: UsuarioService, private router: ActivatedRoute) { 
+    this.service = service;
+    this.router = router;
   }
 
   ngOnInit() {

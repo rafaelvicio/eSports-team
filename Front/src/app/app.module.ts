@@ -11,6 +11,8 @@ import { CadastroUsuarioComponent } from './cadastro-usuario/cadastro-usuario.co
 import { UsuarioComponent } from './usuario/usuario.component';
 import { UsuarioService } from './usuario/usuario.service.component';
 
+import { HttpModule } from '@angular/http';
+
 
 
 @NgModule({
@@ -24,7 +26,8 @@ import { UsuarioService } from './usuario/usuario.service.component';
   ],
   imports: [
     BrowserModule,
-    routing
+    routing,
+    HttpModule
   ],
   providers: [UsuarioService],
   bootstrap: [AppComponent]
