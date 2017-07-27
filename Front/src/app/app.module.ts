@@ -12,6 +12,7 @@ import { UsuarioComponent } from './usuario/usuario.component';
 import { UsuarioService } from './usuario/usuario.service.component';
 
 import { HttpModule } from '@angular/http';
+import { FormsModule }   from '@angular/forms';
 
 
 
@@ -27,7 +28,8 @@ import { HttpModule } from '@angular/http';
   imports: [
     BrowserModule,
     routing,
-    HttpModule
+    HttpModule,
+    FormsModule
   ],
   providers: [UsuarioService],
   bootstrap: [AppComponent]

@@ -6,25 +6,25 @@
         <h3 class="card-header">Cadastro</h3>
       </div>
     </div>
-    <form>
+    <form novalidate #meuForm="ngForm" (submit)="cadastrar($event)">
        <div class="form-group row">
-            <label for="email">Email:</label>
-            <input type="email" class="form-control" id="email" placeholder="Seu email...">
+            <label for="login">Nome:</label>
+            <input required name="login" #login="ngModel" [(ngModel)]="usuario.login" minlength="3" maxlength="6" type="text" class="form-control" id="login" placeholder="Seu nome...">
         </div>
 
         <div class="form-group row">
             <label for="senha">Senha:</label>
-            <input type="password" class="form-control" id="senha" placeholder="Sua senha...">
+            <input required name="senha" #senha="ngModel" [(ngModel)]="usuario.senha" type="password" class="form-control" id="senha" placeholder="Sua senha...">
         </div>
 
         <div class="form-group row">
             <label for="name">Nome completo</label>
-            <input type="text" class="form-control" id="name" placeholder="Seu nome...">
+            <input required name="nome" #nome="ngModel" [(ngModel)]="usuario.nome" type="text" class="form-control" id="name" placeholder="Seu nome...">
         </div>
 
         <div class="row">
             <div class="col">
-            <button type="submit" class="btn btn-primary btn-lg btn-block">Cadastrar </button> 
+            <button [disabled]="meuForm.form.invalid" type="submit" class="btn btn-primary btn-lg btn-block">Cadastrar </button> 
             </div>
         </div>
     </form>
