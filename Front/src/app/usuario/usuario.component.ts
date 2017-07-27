@@ -7,7 +7,10 @@ import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
 })
 export class UsuarioComponent implements OnInit {
 
-  _id: string = '';
+  @Input() _id: string;
+  @Input() login: string;
+  @Input() senha: string;
+  @Input() nome: string;
 
   constructor() { }
 

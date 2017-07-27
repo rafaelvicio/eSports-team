@@ -9,7 +9,7 @@
     <form novalidate #meuForm="ngForm" (submit)="cadastrar($event)">
        <div class="form-group row">
             <label for="login">Nome:</label>
-            <input required name="login" #login="ngModel" [(ngModel)]="usuario.login" minlength="3" maxlength="6" type="text" class="form-control" id="login" placeholder="Seu nome...">
+            <input required name="login" #login="ngModel" [(ngModel)]="usuario.login" minlength="3" maxlength="6" type="text" class="form-control" id="login" placeholder="Seu login...">
         </div>
 
         <div class="form-group row">
@@ -18,8 +18,8 @@
         </div>
 
         <div class="form-group row">
-            <label for="name">Nome completo</label>
-            <input required name="nome" #nome="ngModel" [(ngModel)]="usuario.nome" type="text" class="form-control" id="name" placeholder="Seu nome...">
+            <label for="nome">Nome completo</label>
+            <input required name="nome" #nome="ngModel" [(ngModel)]="usuario.nome" type="text" class="form-control" id="nome" placeholder="Seu nome...">
         </div>
 
         <div class="row">

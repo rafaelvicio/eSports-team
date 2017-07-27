@@ -26,6 +26,7 @@ export class CadastroUsuarioComponent implements OnInit {
     this.service.cadastrar(this.usuario)
       .then(res => {
         this.usuario = new UsuarioComponent();
+        console.log('foi!')
       })
       .catch(erro => console.log(erro));
 
