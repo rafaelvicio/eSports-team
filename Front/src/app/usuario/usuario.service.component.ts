@@ -9,7 +9,7 @@ export class UsuarioService {
 
     http: Http;
     headers: Headers;
-    url: string = 'http://localhost:3000/v1/usuarios';
+    url: string = 'http://localhost:3000/api/usuarios';
 
     constructor(http: Http) {
         this.http = http;
