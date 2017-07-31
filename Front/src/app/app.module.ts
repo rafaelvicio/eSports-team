@@ -13,6 +13,7 @@ import { UsuarioService } from './usuario/usuario.service.component';
 
 import { HttpModule } from '@angular/http';
 import { FormsModule }   from '@angular/forms';
+import { LoginUsuarioComponent } from './login-usuario/login-usuario.component';
 
 
 
@@ -23,7 +24,8 @@ import { FormsModule }   from '@angular/forms';
     PainelComponent,
     LoginComponent,
     CadastroUsuarioComponent,
-    UsuarioComponent
+    UsuarioComponent,
+    LoginUsuarioComponent
   ],
   imports: [
     BrowserModule,
