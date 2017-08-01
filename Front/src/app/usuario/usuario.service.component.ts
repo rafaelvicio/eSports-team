@@ -3,6 +3,7 @@ import { UsuarioComponent } from './usuario.component';
 import 'rxjs/add/operator/toPromise';
 import { Observable } from 'rxjs';
 import { Injectable } from '@angular/core';
+import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 
 @Injectable()
 export class UsuarioService { 
@@ -10,6 +11,9 @@ export class UsuarioService {
     http: Http;
     headers: Headers;
     url: string = 'http://localhost:3000/api/usuarios';
+
+    private _loggedIn: BehaviorSubject<boolean> = new BehaviorSubject(false);
+    public loggedIn: Observable<boolean> = this._loggedIn.asObservable();
 
     constructor(http: Http) {
         this.http = http;
@@ -49,5 +53,35 @@ export class UsuarioService {
       .get(this.url + '/' + id)
       .map(res => res.json());
     }
+
+    // Auth
+
+    autentica(usuario: UsuarioComponent) {
+      return this.http
+                 .post(this.url, JSON.stringify(usuario))
+                 .map((res) => {                     
+                    var token = res.headers.get('x-access-token');
+                    if (token) {
+                        this._loggedIn.next(true);
+                        localStorage.setItem('token', token);
+                    }
+                 });
+  }
+
+  logout() {
+    localStorage.removeItem('token');
+  }
+
+  isLoggedIn() {
+    let token = localStorage.getItem('token');
+
+    if(token){ //essa atribuição é feita para atualizar a variavel e o resto do sistema ser notificado
+      this._loggedIn.next(true);
+    } else {
+      this._loggedIn.next(false);
+    }
+
+    return this._loggedIn.getValue();
+  }
 
 }

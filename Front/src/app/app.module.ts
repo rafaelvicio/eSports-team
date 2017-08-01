@@ -14,7 +14,9 @@ import { FormsModule }   from '@angular/forms';
 import { LoginUsuarioComponent } from './login-usuario/login-usuario.component';
 import { PainelUsuarioComponent } from './painel-usuario/painel-usuario.component';
 
-
+import { Http } from '@angular/http';
+import { LoggedInGuard } from './auth/LoggedInGuard';
+import { HttpService } from './auth/ExtendedHttpService';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,7 @@ import { PainelUsuarioComponent } from './painel-usuario/painel-usuario.componen
     HttpModule,
     FormsModule
   ],
-  providers: [UsuarioService],
+  providers: [UsuarioService, { provide: Http, useClass: HttpService }, LoggedInGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
