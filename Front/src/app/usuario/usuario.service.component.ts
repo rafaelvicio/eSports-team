@@ -68,6 +68,19 @@ export class UsuarioService {
                  });
   }
 
+  logar(usuario: UsuarioComponent): Promise<any> {
+    return this.http.post(this.url, JSON.stringify(usuario))
+      .toPromise()
+        .then( res => {
+          var token = res.headers.get('x-access-token');
+                    if (token) {
+                        this._loggedIn.next(true);
+                        localStorage.setItem('token', token);
+                    }
+        })
+        .catch( err => console.log(err))
+  }
+
   logout() {
     localStorage.removeItem('token');
   }

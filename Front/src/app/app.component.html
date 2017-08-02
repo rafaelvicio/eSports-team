@@ -18,7 +18,7 @@
         <li><a href="#">Blog</a></li>
         <li><a href="#">Contato</a></li>
       </ul>
-      <ul class="nav navbar-nav navbar-right">
+      <ul *ngIf="user.loggedIn | async" class="nav navbar-nav navbar-right">
         <li><a href="../navbar/">Olá, Rafael</a></li>
       </ul>
     </div><!--/.nav-collapse -->

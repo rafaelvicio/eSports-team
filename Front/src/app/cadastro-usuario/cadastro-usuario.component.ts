@@ -32,4 +32,12 @@ export class CadastroUsuarioComponent implements OnInit {
 
   }
 
+  login(){
+
+    this.service.logar(this.usuario)
+      .then(res => console.log(res))
+      .catch(erro => console.log(erro));
+    
+  }
+
 }
