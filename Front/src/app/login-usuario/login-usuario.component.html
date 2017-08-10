@@ -6,21 +6,18 @@
         <h3 class="card-header">Login</h3>
       </div>
     </div>
-    <form>
+    <form novalidate #meuForm="ngForm" (submit)="logar($event)">
+
       <div class="form-group row">
-        <label for="example-email-input" class="col-2 col-form-label">Email:</label>
-        <div class="col-10">
-          <input class="form-control" type="email">
-        </div>
+        <label for="login">Nome:</label>
+        <input required name="login" #login="ngModel" [(ngModel)]="usuario.login" minlength="3" maxlength="6" type="text" class="form-control" id="login" placeholder="Seu login...">
       </div>
 
       <div class="form-group row">
-        <label for="example-email-input" class="col-2 col-form-label">Senha:</label>
-        <div class="col-10">
-          <input class="form-control" type="password">
-        </div>
+        <label for="senha">Senha:</label>
+        <input required name="senha" #senha="ngModel" [(ngModel)]="usuario.senha" type="password" class="form-control" id="senha" placeholder="Sua senha...">
       </div>
-
+      
       <div class="row">
         <div class="col">
           <button type="submit" class="btn btn-primary btn-lg">Entrar </button> 
