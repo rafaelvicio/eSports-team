@@ -12,7 +12,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class LoginUsuarioComponent implements OnInit {
 
-  usuario: UsuarioComponent = new UsuarioComponent();
+  public usuario = new UsuarioComponent;
 
   constructor( private service: UsuarioService, private router: ActivatedRoute) { 
     this.service = service;
@@ -28,8 +28,10 @@ export class LoginUsuarioComponent implements OnInit {
         .then( res => {
           console.log('Logando...')
         })
-        .catch(erro => console.log(erro))
-        
+        .catch(erro => {
+          console.log('deu erro: ' + erro)
+        })
+          
   }
 
 }

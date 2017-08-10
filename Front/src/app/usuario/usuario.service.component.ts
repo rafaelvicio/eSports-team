@@ -72,13 +72,17 @@ export class UsuarioService {
     return this.http.post(this.url, JSON.stringify(usuario))
       .toPromise()
         .then( res => {
+          console.log('chegou no service!')
           var token = res.headers.get('x-access-token');
                     if (token) {
                         this._loggedIn.next(true);
                         localStorage.setItem('token', token);
                     }
         })
-        .catch( err => console.log(err))
+        .catch( err => {
+          console.log('deu erro no service')
+          console.log(err)
+        })
   }
 
   logout() {
