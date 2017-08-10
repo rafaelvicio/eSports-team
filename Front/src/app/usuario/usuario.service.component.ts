@@ -10,7 +10,7 @@ export class UsuarioService {
 
     http: Http;
     headers: Headers;
-    url: string = 'http://localhost:3000/api/usuarios';
+    url: string = 'http://localhost:3000/api/auth/autenticar';
 
     private _loggedIn: BehaviorSubject<boolean> = new BehaviorSubject(false);
     public loggedIn: Observable<boolean> = this._loggedIn.asObservable();
