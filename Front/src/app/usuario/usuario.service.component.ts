@@ -57,6 +57,7 @@ export class UsuarioService {
     // Auth
 
     autentica(usuario: UsuarioComponent) {
+      console.log('meu usuário2222' + usuario)
       return this.http
                  .post(this.url, JSON.stringify(usuario))
                  .map((res) => {                     
@@ -69,14 +70,17 @@ export class UsuarioService {
   }
 
   logar(usuario: UsuarioComponent) {
+    console.log('Meu usuário:' + JSON.stringify(usuario))
     return this.http.post(this.url, JSON.stringify(usuario))
-      .map((res) => {                     
+      .map((res) => {       
+        console.log('meu token:' + res.headers.get('x-access-token'))              
         var token = res.headers.get('x-access-token');
           if (token) {
+            console.log('tem token')
             this._loggedIn.next(true);
             localStorage.setItem('token', token);
            }
-        });
+        }, err => console.log('deu erro no service: ' + err));
   }
 
   logout() {

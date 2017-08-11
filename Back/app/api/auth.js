@@ -14,6 +14,7 @@ module.exports = function(app) {
          })
          .then(function(usuario) {
              if (!usuario) {
+                 console.log('deu ruim aqui')
                  res.sendStatus(401);
              } else {
                  var token = jwt.sign( {login: usuario.login}, app.get('secret'), {
