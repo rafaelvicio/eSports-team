@@ -7,7 +7,7 @@ module.exports = function(app) {
      var model = mongoose.model('Usuario');
 
      api.autentica = function(req, res) {
-
+        console.log(req);
          model.findOne({
              login: req.body.login,
              senha: req.body.senha

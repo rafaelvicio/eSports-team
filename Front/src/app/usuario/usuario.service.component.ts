@@ -71,7 +71,7 @@ export class UsuarioService {
 
   logar(usuario: UsuarioComponent) {
     console.log('Meu usuário:' + JSON.stringify(usuario))
-    return this.http.post(this.url, JSON.stringify(usuario))
+    return this.http.post(this.url, usuario)
       .map((res) => {       
         console.log('meu token:' + res.headers.get('x-access-token'))              
         var token = res.headers.get('x-access-token');
