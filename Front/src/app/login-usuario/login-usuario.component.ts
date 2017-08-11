@@ -24,14 +24,14 @@ export class LoginUsuarioComponent implements OnInit {
 
   logar(){
 
-      this.service.logar(this.usuario)
-        .then( res => {
-          console.log('Logando...')
-        })
-        .catch(erro => {
-          console.log('deu erro: ' + erro)
-        })
-          
+    console.log('Usuário tentando logar: ' + this.usuario)
+
+    this.service
+      .logar(this.usuario)
+      .subscribe(res => {
+        console.log('Tentando logar')
+      }, erro => console.log('Deu erro ao tentar logar'))
+      
   }
 
 }

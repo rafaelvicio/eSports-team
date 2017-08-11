@@ -9,7 +9,7 @@ export class HttpService extends Http {
 
   constructor (backend: XHRBackend, options: RequestOptions) {
     let token = localStorage.getItem('x-access-token'); // your custom token getter function here
-    options.headers.set('Authorization', `Bearer ${token}`);
+    options.headers.set('x-access-token', `${token}`);
     super(backend, options);
   }
 
@@ -20,10 +20,10 @@ export class HttpService extends Http {
         // let's make option object
         options = {headers: new Headers()};
       }
-      options.headers.set('Authorization', `Bearer ${token}`);
+      options.headers.set('x-access-token', `${token}`);
     } else {
     // we have to add the token to the url object
-      url.headers.set('Authorization', `Bearer ${token}`);
+      url.headers.set('x-access-token', `${token}`);
     }
     return super.request(url, options).catch(this.catchAuthError(this));
   }
