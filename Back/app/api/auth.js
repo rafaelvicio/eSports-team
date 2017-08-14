@@ -17,12 +17,15 @@ module.exports = function(app) {
                  console.log('deu ruim aqui')
                  res.sendStatus(401);
              } else {
-                 var token = jwt.sign( {login: usuario.login}, app.get('secret'), {
+                 var token = jwt.sign( {login: usuario.login}, 'shhhhhhh', {
                      expiresIn: 86400
                  });
                  res.set('x-access-token', token);
                  res.end();
              }
+         })
+         .catch(function(erro){
+             console.log('Erro ao autenticar: ' + erro)
          });
      };
 
