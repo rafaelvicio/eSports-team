@@ -18,8 +18,8 @@
         <li><a href="#">Blog</a></li>
         <li><a href="#">Contato</a></li>
       </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="../navbar/">Olá, Rafael</a></li>
+      <ul class="nav navbar-nav navbar-right" *ngIf="usuario.loggedIn">
+        <li><a href="../navbar/">Olá</a></li>
       </ul>
     </div><!--/.nav-collapse -->
   </div>
