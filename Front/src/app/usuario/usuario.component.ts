@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
+import { UsuarioService } from './usuario.service.component';
 
 @Component({
   selector: 'app-usuario',

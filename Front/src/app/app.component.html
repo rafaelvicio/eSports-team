@@ -12,13 +12,13 @@
     </div>
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">Painel</a></li>
-        <li><a href="#">Cadastro</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Contato</a></li>
+        <li class="active"><a [routerLink]="['/']">Home</a></li>
+        <li><a [routerLink]="['/painel']">Painel</a></li>
+        <li><a [routerLink]="['/cadastro']">Cadastro</a></li>
+        <li><a [routerLink]="['/blog']">Blog</a></li>
+        <li><a [routerLink]="['/contato']">Contato</a></li>
       </ul>
-      <ul class="nav navbar-nav navbar-right" *ngIf="usuario.loggedIn">
+      <ul class="nav navbar-nav navbar-right" *ngIf="usuario.loggedIn | async">
         <li><a href="../navbar/">Olá</a></li>
       </ul>
     </div><!--/.nav-collapse -->
