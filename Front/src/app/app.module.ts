@@ -17,6 +17,7 @@ import { PainelUsuarioComponent } from './painel-usuario/painel-usuario.componen
 import { Http } from '@angular/http';
 import { LoggedInGuard } from './auth/LoggedInGuard';
 import { HttpService } from './auth/ExtendedHttpService';
+import { SairComponent } from './sair/sair.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { HttpService } from './auth/ExtendedHttpService';
     CadastroUsuarioComponent,
     UsuarioComponent,
     LoginUsuarioComponent,
-    PainelUsuarioComponent
+    PainelUsuarioComponent,
+    SairComponent
   ],
   imports: [
     BrowserModule,

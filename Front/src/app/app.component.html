@@ -19,7 +19,7 @@
         <li><a [routerLink]="['/contato']">Contato</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right" *ngIf="usuario.loggedIn | async">
-        <li><a href="../navbar/">Olá</a></li>
+        <li> <a [routerLink]="['/painel/sair']">Sair</a></li>
       </ul>
     </div><!--/.nav-collapse -->
   </div>
