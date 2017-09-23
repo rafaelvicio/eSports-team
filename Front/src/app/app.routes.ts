@@ -4,6 +4,7 @@ import { CadastroUsuarioComponent } from './cadastro-usuario/cadastro-usuario.co
 import { LoginUsuarioComponent } from './login-usuario/login-usuario.component';
 import { PainelUsuarioComponent } from './painel-usuario/painel-usuario.component';
 import { SairComponent } from './sair/sair.component';
+import { CadastroTimeComponent } from './cadastro-time/cadastro-time.component';
 
 import { LoggedInGuard } from './auth/LoggedInGuard';
 
@@ -12,6 +13,7 @@ const appRoutes: Routes = [
   { path: 'cadastro', component: CadastroUsuarioComponent },
   { path: 'login', component: LoginUsuarioComponent },
   { path: 'painel', component: PainelUsuarioComponent, canActivate: [LoggedInGuard] },
+  { path: 'times/cadastro', component: CadastroTimeComponent, canActivate: [LoggedInGuard] },
   { path: 'painel/sair', component: SairComponent, canActivate: [LoggedInGuard] },
   { path: '**', redirectTo: '' }
 ];

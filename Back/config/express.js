@@ -21,10 +21,6 @@ app.use(function(req, res, next) {
     }
 });
 
-app.all('/*', function(req, res, next) {
-    res.sendFile(path.join(app.get('clientPath'), 'index.html'));
-});
-
 consign({ cwd: 'app'})
   .include('models')
   .then('api')

@@ -7,17 +7,7 @@ var schema = mongoose.Schema({
     required: true
   },
 
-  tag: {
-    type: String,
-    required: true
-  },
-
-  email: {
-    type: String,
-    required: true
-  },
-
-  biografia: {
+  descricao: {
     type: String,
     required: true
   },

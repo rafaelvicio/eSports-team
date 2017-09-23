@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { CadastroUsuarioComponent } from './cadastro-usuario/cadastro-usuario.component';
 import { UsuarioComponent } from './usuario/usuario.component';
 import { UsuarioService } from './usuario/usuario.service.component';
+import { TimeService } from './time/time.service.component';
 
 import { HttpModule } from '@angular/http';
 import { FormsModule }   from '@angular/forms';
@@ -18,6 +19,8 @@ import { Http } from '@angular/http';
 import { LoggedInGuard } from './auth/LoggedInGuard';
 import { HttpService } from './auth/ExtendedHttpService';
 import { SairComponent } from './sair/sair.component';
+import { CadastroTimeComponent } from './cadastro-time/cadastro-time.component';
+import { TimeComponent } from './time/time.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +30,9 @@ import { SairComponent } from './sair/sair.component';
     UsuarioComponent,
     LoginUsuarioComponent,
     PainelUsuarioComponent,
-    SairComponent
+    SairComponent,
+    CadastroTimeComponent,
+    TimeComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +40,7 @@ import { SairComponent } from './sair/sair.component';
     HttpModule,
     FormsModule
   ],
-  providers: [UsuarioService, { provide: Http, useClass: HttpService }, LoggedInGuard],
+  providers: [UsuarioService, TimeService, { provide: Http, useClass: HttpService }, LoggedInGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
