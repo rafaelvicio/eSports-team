@@ -1,23 +1,16 @@
-var mongoose = require('mongoose');
-var api = {};
+const  mongoose = require('mongoose')
+const  model = mongoose.model('Time')
 
-var model = mongoose.model('Time');
+const adiciona = (req, res) => 
+  model.create(req.body)
+        .then( ( time ) => 
+          res.status( 200 ).json( time ) )
+        .catch( ( erro ) => {
+          console.log( erro )
+          res.status( 500 ).json( erro )
+        })
 
-api.adiciona = function(req, res) {
-
-  model
-    .create(req.body)
-      .then(function(){
-        res.json(time);
-
-      }, function(error) {
-        console.log(error);
-        res.status(500).json(error);
-      });
-
-};
-
-api.atualiza = function(req, res) {
+const atualiza = function(req, res) {
 
   model
     .findByIdAndUpdate(req.params.id, req.body)
@@ -31,7 +24,7 @@ api.atualiza = function(req, res) {
 
 };
 
-api.lista = function(req, res) {
+const lista = function(req, res) {
 
   model
     .find({})
@@ -45,12 +38,12 @@ api.lista = function(req, res) {
 
 };
 
-api.buscaPorId = function(req, res) {
+const buscaPorId = function(req, res) {
 
   model
     .findById(req.params.id)
       .then(function(time){
-        if(!time) throw Error('Time não encontrada');
+        if(!time) throw Error('time não encontrada');
         res.json(time);
 
       }, function(error){
@@ -60,7 +53,7 @@ api.buscaPorId = function(req, res) {
 
 };
 
-api.removePorId = function(req, res) {
+const removePorId = function(req, res) {
 
   model
     .remove({_id: req.params.id})
@@ -72,5 +65,13 @@ api.removePorId = function(req, res) {
       });
 
 };
+
+const api = {
+  adiciona,
+  atualiza,
+  lista,
+  buscaPorId,
+  removePorId
+ }
 
 module.exports = api;

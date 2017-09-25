@@ -21,11 +21,11 @@ export class CadastroTimeComponent implements OnInit {
   ngOnInit() {
   }
 
-  cadastrar(){
+  cadastrar2(){
     console.log('bateu aqui!');
   }
 
-  cadastar2() {
+  cadastrar() {
     this.service.cadastrar(this.time)
       .then(res => {
         this.time = new TimeComponent();
