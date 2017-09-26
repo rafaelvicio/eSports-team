@@ -12,4 +12,8 @@ export class PainelUsuarioComponent implements OnInit {
   ngOnInit() {
   }
 
+  recupera(){
+    console.log('Recuperando usuário');
+  }
+
 }

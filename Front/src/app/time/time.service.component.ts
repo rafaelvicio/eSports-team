@@ -18,11 +18,9 @@ export class TimeService {
         this.headers.append('Content-Type', 'application/json');
   }
 
-  lista(): Promise<TimeComponent[]>{
-      return this.http.get(this.url)
-        .toPromise()
-        .then(res => res.json())
-        .catch();
+  lista(): Observable<TimeComponent[]> {
+    return this.http.get(this.url)
+      .map(res => res.json());
   }
 
   cadastrar(time: TimeComponent): Promise<any> {

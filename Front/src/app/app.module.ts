@@ -21,6 +21,7 @@ import { HttpService } from './auth/ExtendedHttpService';
 import { SairComponent } from './sair/sair.component';
 import { CadastroTimeComponent } from './cadastro-time/cadastro-time.component';
 import { TimeComponent } from './time/time.component';
+import { PainelTimesComponent } from './painel-times/painel-times.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { TimeComponent } from './time/time.component';
     PainelUsuarioComponent,
     SairComponent,
     CadastroTimeComponent,
-    TimeComponent
+    TimeComponent,
+    PainelTimesComponent
   ],
   imports: [
     BrowserModule,

@@ -32,8 +32,10 @@ module.exports = function(app) {
     api.verificaToken = function(req, res, next) {
 
          var token = req.headers['x-access-token'];
+         console.log('chegou aqui')
 
          if (token) {
+             console.log('tem token', token);
              jwt.verify(token, app.get('secret'), function(err, decoded) {
                  if (err) {
                      return res.sendStatus(401);
@@ -44,6 +46,7 @@ module.exports = function(app) {
                   }
             });
         } else {
+            console.log('Não tem token na requisição');
             return res.sendStatus(401);
           }
     }
