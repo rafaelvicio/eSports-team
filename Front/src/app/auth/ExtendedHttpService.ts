@@ -9,7 +9,6 @@ export class HttpService extends Http {
 
   constructor (backend: XHRBackend, options: RequestOptions) {
     let token = localStorage.getItem('token'); // your custom token getter function here
-    console.log('chegou aqui no token', token);
     options.headers.set('x-access-token', `${token}`);
     super(backend, options);
   }
@@ -32,7 +31,7 @@ export class HttpService extends Http {
   private catchAuthError (self: HttpService) {
     // we have to pass HttpService's own instance here as `self`
     return (res: Response) => {
-      console.log(res);
+      console.log('Não esta autorizado', res);
       if (res.status === 401 || res.status === 403) {
         // if not authenticated
         console.log(res);
