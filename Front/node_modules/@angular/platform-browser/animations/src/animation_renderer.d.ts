@@ -8,6 +8,7 @@ export declare class AnimationRendererFactory implements RendererFactory2 {
     private _microtaskId;
     private _animationCallbacksBuffer;
     private _rendererCache;
+    private _cdRecurDepth;
     constructor(delegate: RendererFactory2, engine: AnimationEngine, _zone: NgZone);
     createRenderer(hostElement: any, type: RendererType2): Renderer2;
     begin(): void;
@@ -43,6 +44,7 @@ export declare class BaseAnimationRenderer implements Renderer2 {
     setProperty(el: any, name: string, value: any): void;
     setValue(node: any, value: string): void;
     listen(target: any, eventName: string, callback: (event: any) => boolean | void): () => void;
+    protected disableAnimations(element: any, value: boolean): void;
 }
 export declare class AnimationRenderer extends BaseAnimationRenderer implements Renderer2 {
     factory: AnimationRendererFactory;

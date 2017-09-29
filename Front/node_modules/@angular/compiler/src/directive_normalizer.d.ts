@@ -23,6 +23,7 @@ export interface PrenormalizedTemplateMetadata {
     interpolation: [string, string] | null;
     encapsulation: ViewEncapsulation | null;
     animations: CompileAnimationEntryMetadata[];
+    preserveWhitespaces: boolean | null;
 }
 export declare class DirectiveNormalizer {
     private _resourceLoader;

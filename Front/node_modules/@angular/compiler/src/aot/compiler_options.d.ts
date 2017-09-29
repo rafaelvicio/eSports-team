@@ -13,4 +13,5 @@ export interface AotCompilerOptions {
     missingTranslation?: MissingTranslationStrategy;
     enableLegacyTemplate?: boolean;
     enableSummariesForJit?: boolean;
+    preserveWhitespaces?: boolean;
 }

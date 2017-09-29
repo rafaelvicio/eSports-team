@@ -161,7 +161,8 @@ export declare class CompileTemplateMetadata {
     animations: any[];
     ngContentSelectors: string[];
     interpolation: [string, string] | null;
-    constructor({encapsulation, template, templateUrl, styles, styleUrls, externalStylesheets, animations, ngContentSelectors, interpolation, isInline}: {
+    preserveWhitespaces: boolean;
+    constructor({encapsulation, template, templateUrl, styles, styleUrls, externalStylesheets, animations, ngContentSelectors, interpolation, isInline, preserveWhitespaces}: {
         encapsulation: ViewEncapsulation | null;
         template: string | null;
         templateUrl: string | null;
@@ -172,6 +173,7 @@ export declare class CompileTemplateMetadata {
         animations: any[];
         interpolation: [string, string] | null;
         isInline: boolean;
+        preserveWhitespaces: boolean;
     });
     toSummary(): CompileTemplateSummary;
 }
