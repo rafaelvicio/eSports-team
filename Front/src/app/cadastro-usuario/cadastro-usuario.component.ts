@@ -22,6 +22,10 @@ export class CadastroUsuarioComponent implements OnInit {
   }
 
   cadastrar(){
+    console.log('Cadastrando usuário.')
+  }
+
+  cadastrar2(){
 
     this.service.cadastrar(this.usuario)
       .then(res => {
