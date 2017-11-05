@@ -7,6 +7,16 @@ var schema = mongoose.Schema({
     required: true
   },
 
+  tag: {
+    type: String,
+    required: true
+  },
+
+  jogo: {
+    type: String,
+    required: true
+  },
+
   descricao: {
     type: String,
     required: true
