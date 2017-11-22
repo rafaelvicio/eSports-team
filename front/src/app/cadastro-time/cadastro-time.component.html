@@ -1,0 +1,69 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header" data-background-color="red">
+                        <h4 class="title">Cadastro de Time</h4>
+                        <p class="category">Faça o cadastro do seu time</p>
+                    </div>
+                    <div class="card-content">
+                            <div class="alert alert-success">
+                                    <div class="container-fluid">
+                                      <div class="alert-icon">
+                                        <i class="material-icons">check</i>
+                                      </div>
+                                      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                        <span aria-hidden="true"><i class="material-icons">clear</i></span>
+                                      </button>
+                                      <b>Sucesso:</b> O cadastro do seu time foi realizado com sucesso. Clique <a ng-href="/painel/times">aqui</a> para ver a lista de times
+                                    </div>
+                                    </div>
+                        <form novalidate #meuForm="ngForm" (submit)="cadastrar($event)">
+  
+                            <div class="row">
+                              <div class="col-md-6">
+                                  <div class="form-group form-black label-floating is-empty">
+                                      <label class="control-label">Nome do Time</label>
+                                      <input id="nome" name="nome" class="form-control"
+                                      [(ngModel)]="time.nome" #login="ngModel" >
+  
+                                  </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="form-group form-black label-floating is-empty">
+                                    <label class="control-label">TAG do Time</label>
+                                    <input id="tag" name="tag" class="form-control"
+                                    [(ngModel)]="time.tag" #login="ngModel" >
+
+                                </div>
+                            </div>
+                          </div>
+    
+                            <div class="row">
+                                    <div class="col-md-6">
+                                            <div class="form-group form-black label-floating is-empty">
+                                                <label class="control-label">Descrição</label>
+                                                <input id="descricao" name="descricao" class="form-control"
+                                                [(ngModel)]="time.descricao" #login="ngModel" >
+                                            </div>
+                                        </div>
+                                <div class="col-md-6">
+                                    <div class="form-group form-black label-floating is-empty">
+                                        <label class="control-label">Jogo do Time</label>
+                                        <input id="jogo" name="jogo" class="form-control"
+                                        [(ngModel)]="time.jogo" #login="ngModel" >
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <button [disabled]="meuForm.form.invalid" type="submit" class="btn btn-danger pull-right">Realizar Cadastro</button>
+                            <div class="clearfix"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    

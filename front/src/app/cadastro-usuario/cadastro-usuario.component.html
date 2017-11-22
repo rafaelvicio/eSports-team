@@ -1,0 +1,50 @@
+<div class="main-content">
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-12">
+              <div class="card">
+                  <div class="card-header" data-background-color="red">
+                      <h4 class="title">Cadastro de Usuário</h4>
+                      <p class="category">Faça o seu cadastro no MyTeam</p>
+                  </div>
+                  <div class="card-content">
+                      <form novalidate #meuForm="ngForm" (submit)="cadastrar($event)">
+
+                          <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group form-black label-floating is-empty">
+                                    <label class="control-label">Login de Usuário</label>
+                                    <input id="login" name="login" class="form-control"
+                                    [(ngModel)]="usuario.login" #login="ngModel" >
+
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group form-black label-floating is-empty">
+                                    <label class="control-label">Senha</label>
+                                    <input required name="senha" #senha="ngModel" [(ngModel)]="usuario.senha" minlength="3" maxlength="6"
+                                    type="password" class="form-control" >
+                                </div>
+                            </div>
+                        </div>
+  
+                          <div class="row">
+                              <div class="col-md-6">
+                                  <div class="form-group form-black label-floating is-empty">
+                                      <label class="control-label">Nome de Usuário</label>
+                                      <input required name="nome" #nome="ngModel" [(ngModel)]="usuario.nome" minlength="3" maxlength="6"
+                                      type="text" class="form-control" >
+                                  </div>
+                              </div>
+                          </div>
+  
+                          <button [disabled]="meuForm.form.invalid" type="submit" class="btn btn-danger pull-right">Realizar Cadastro</button>
+                          <div class="clearfix"></div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  </div>
+  
