@@ -14,7 +14,6 @@ export const ROUTES: RouteInfo[] = [
     { path: 'sobre', title: 'Sobre',  icon:'computer', class: '' },
     { path: 'blog', title: 'Blog',  icon:'library_books', class: '' },
     { path: 'contato', title: 'Contato',  icon:'email', class: '' },
-    { path: 'upgrade', title: 'Upgrade to PRO',  icon:'email', class: 'active-pro' },
 ];
 
 @Component({
